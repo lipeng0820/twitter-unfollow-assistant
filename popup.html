@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>X Unfollow Helper</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 34px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+    .option {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+    }
+    .note {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #666;
+    }
+  </style>
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <div class="option">
+    <span>启用Twitter 取关小助手</span>
+    <label class="switch">
+      <input type="checkbox" id="toggleButton">
+      <span class="slider"></span>
+    </label>
+  </div>
+  <div class="option">
+    <span>启用狂躁模式</span>
+    <label class="switch">
+      <input type="checkbox" id="frenzyModeCheckbox">
+      <span class="slider"></span>
+    </label>
+  </div>
+  <div class="option">
+    <span>保护「关注了你」的好友</span>
+    <label class="switch">
+      <input type="checkbox" id="protectFollowersCheckbox">
+      <span class="slider"></span>
+    </label>
+  </div>
+  <div class="option">
+    <span>保护「已锁推」的账号</span>
+    <label class="switch">
+      <input type="checkbox" id="protectLockedAccountsCheckbox">
+      <span class="slider"></span>
+    </label>
+  </div>
+  <p class="note">💡 启用/停用或保护状态修改后，请先刷新 Twitter 界面再使用。</p>
+  <p class="note">💡 开启狂躁模式后，需要按住键盘左上角的"～"键，再用光标扫过"正在关注"按钮。</p>
+</body>
+</html>
