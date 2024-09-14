@@ -7,9 +7,11 @@ Q：他有什么用？
 A：如果你当年像我一样关注了一堆有的没的没啥用的账号，可以使用取关小助手帮助你快速取消关注
 
 Q：怎么安装？
-A：在Edge中点击“管理扩展” > 界面左侧打开 “开发人员模式”，如图所示：<img width="800" alt="image" src="https://github.com/user-attachments/assets/03d315d0-868c-4b91-a4ca-02d5fd637939">
-然后点击“加载解压缩的”扩展，<img width="800" alt="image" src="https://github.com/user-attachments/assets/5bb05643-6009-4ee4-bd91-0910bf36b9e2">
+A：在Edge中点击“管理扩展” > 界面左侧打开 “开发人员模式”，如图所示：
+然后点击“加载解压缩的”扩展，
 完成安装。
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/03d315d0-868c-4b91-a4ca-02d5fd637939">
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/5bb05643-6009-4ee4-bd91-0910bf36b9e2">
 
 Q：如何使用？
 A：有4个开关
