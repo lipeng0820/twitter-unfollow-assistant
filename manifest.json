@@ -1,18 +1,30 @@
 {
     "manifest_version": 3,
-    "name": "X Unfollow Helper",
-    "version": "1.2",
-    "description": "自动点击X上的取消关注按钮",
+    "name": "Twitter取关小助手",
+    "version": "1.0",
+    "description": "帮助用户快速取消已关注的Twitter（X）账号",
+    "icons": {
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "64": "images/icon64.png",
+        "128": "images/icon128.png"
+    },
     "permissions": ["activeTab", "storage", "scripting"],
     "background": {
       "service_worker": "background.js"
     },
     "action": {
-      "default_popup": "popup.html"
+      "default_popup": "popup.html",
+      "default_icon": {
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "64": "images/icon64.png",
+        "128": "images/icon128.png"
+      }
     },
     "content_scripts": [
       {
-        "matches": ["*://*.x.com/*"],
+        "matches": ["*://*.twitter.com/*", "*://*.x.com/*"],
         "js": ["content.js"]
       }
     ]

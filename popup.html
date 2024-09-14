@@ -59,6 +59,40 @@
       font-size: 12px;
       color: #666;
     }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .button {
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+      background-color: #1DA1F2;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      font-size: 14px;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #1991db;
+    }
+    .button svg {
+      margin-right: 6px;
+      fill: white; /* 将图标颜色改为白色，与按钮文字颜色一致 */
+    }
+    .button:hover svg {
+      fill: white;
+    }
+    /* 为邮件图标添加特殊样式 */
+    .button svg[stroke="currentColor"] {
+      fill: none;
+      stroke: white;
+    }
+    .button:hover svg[stroke="currentColor"] {
+      stroke: white;
+    }
   </style>
   <script src="popup.js" defer></script>
 </head>
@@ -93,5 +127,21 @@
   </div>
   <p class="note">💡 启用/停用或保护状态修改后，请先刷新 Twitter 界面再使用。</p>
   <p class="note">💡 开启狂躁模式后，需要按住键盘左上角的"～"键，再用光标扫过"正在关注"按钮。</p>
+  
+  <div class="buttons">
+    <a href="https://x.com/lipeng0820" target="_blank" class="button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </svg>
+      关注 SimbaLee
+    </a>
+    <a href="mailto:lipeng0820@gmail.com" class="button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+        <polyline points="22,6 12,13 2,6"></polyline>
+      </svg>
+      反馈
+    </a>
+  </div>
 </body>
 </html>
