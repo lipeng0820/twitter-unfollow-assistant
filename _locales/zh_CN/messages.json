@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Twitter取关小助手",
+    "description": "扩展的名称"
+  },
+  "appDescription": {
+    "message": "帮助用户快速取消已关注的Twitter（X）账号",
+    "description": "扩展的描述"
+  }
+}
