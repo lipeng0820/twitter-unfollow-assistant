@@ -1,5 +1,7 @@
 # Twitter 取关小助手
 
+关注一下这个妖孽吗？[![Twitter Follow](https://img.shields.io/twitter/follow/lipeng0820?style=social)](https://x.com/lipeng0820)
+
 ![Twitter 取关小助手](https://github.com/user-attachments/assets/7288ab9a-ffcc-4faf-a1e0-099f8bc02fa0)
 
 ## 功能介绍
