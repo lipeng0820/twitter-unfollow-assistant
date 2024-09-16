@@ -10,7 +10,7 @@
         "64": "images/icon64.png",
         "128": "images/icon128.png"
     },
-    "permissions": ["activeTab", "storage", "scripting"],
+    "permissions": ["activeTab", "storage"],
     "background": {
       "service_worker": "background.js"
     },
